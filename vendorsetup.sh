@@ -1,1 +1,1 @@
-add_lunch_combo omni_otus-userdebug
+add_lunch_combo omni_condor-userdebug

@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/motorola/otus
+LOCAL_PATH := device/motorola/condor
 
 TARGET_ARCH := arm
 TARGET_CPU_ABI  := armeabi-v7a
@@ -51,7 +51,7 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-TARGET_RECOVERY_FSTAB := device/motorola/otus/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/motorola/condor/twrp.fstab
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00A00000

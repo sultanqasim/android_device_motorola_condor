@@ -18,11 +18,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device.mk
-$(call inherit-product, device/motorola/otus/device.mk)
+$(call inherit-product, device/motorola/condor/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := otus
-PRODUCT_NAME := full_otus
+PRODUCT_DEVICE := condor
+PRODUCT_NAME := full_condor
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := otus
+PRODUCT_MODEL := condor
 PRODUCT_MANUFACTURER := motorola

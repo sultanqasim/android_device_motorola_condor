@@ -1,9 +1,11 @@
 /system       ext4          /dev/block/platform/msm_sdcc.1/by-name/system
-/data         f2fs          /dev/block/platform/msm_sdcc.1/by-name/userdata   flags=fsflags=rw,discard,nosuid,nodev,noatime,nodiratime,inline_xattr,inline_data;encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
+/data         f2fs          /dev/block/platform/msm_sdcc.1/by-name/userdata   flags=fsflags=rw,discard,nosuid,nodev,noatime,nodiratime,inline_xattr,inline_data;encryptable=footer;length=-16384
+/data         ext4          /dev/block/platform/msm_sdcc.1/by-name/userdata   flags=fsflags=rw,nosuid,nodev,noatime,nodiratime,noauto_da_alloc,nobarrier,inline_xattr;encryptable=footer;length=-16384
 /cache        ext4          /dev/block/platform/msm_sdcc.1/by-name/cache
 /boot         emmc          /dev/block/platform/msm_sdcc.1/by-name/boot
 /recovery     emmc          /dev/block/platform/msm_sdcc.1/by-name/recovery
 /persist      ext4          /dev/block/platform/msm_sdcc.1/by-name/persist    flags=fsflags=ro,nosuid,nodev,barrier=0;mounttodecrypt
 /firmware     ext4          /dev/block/platform/msm_sdcc.1/by-name/modem      flags=fsflags=ro,nosuid,nodev,barrier=0;mounttodecrypt
+
 /external_sd  auto          /dev/block/mmcblk1p1  /dev/block/mmcblk1          flags=display="MicroSD Card";storage;wipeingui;removable
-/usb_otg      auto          /devices/platform/msm_hsusb                       flags=display="USB-OTG";storage;wipeingui;removable
+/usb_otg      auto          /dev/block/sda1 /dev/block/sda                    flags=display="USB-OTG";storage;wipeingui;removable

@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_otus.mk
+    $(LOCAL_DIR)/omni_condor.mk

@@ -17,6 +17,6 @@
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
-$(call inherit-product, device/motorola/otus/full_otus.mk)
+$(call inherit-product, device/motorola/condor/full_condor.mk)
 
-PRODUCT_NAME := omni_otus
+PRODUCT_NAME := omni_condor
